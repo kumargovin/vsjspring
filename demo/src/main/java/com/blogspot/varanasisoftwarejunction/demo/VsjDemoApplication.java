@@ -8,15 +8,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class DemoApplication {
+public class VsjDemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(VsjDemoApplication.class, args);
 		System.out.println("hello");
 	}
-	@GetMapping("/hello")
+	@GetMapping("/test")
 
-	public String sayHello(@RequestParam(value = "name", defaultValue = "World") String name) {
+	public String doTest(@RequestParam(value = "name", defaultValue = "World") String name) {
 		return String.format("Hello %s", name);
 	}
 	@GetMapping("/add")
