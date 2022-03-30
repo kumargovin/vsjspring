@@ -1,4 +1,4 @@
-package com.example.accessingdatamysql;
+package com.blogspot.varanasisoftwarejunction.vsjmysql;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
