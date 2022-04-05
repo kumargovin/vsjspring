@@ -62,6 +62,14 @@ private BookRepository bookRepository;
 		// This returns a JSON or XML with the books
 		return bookRepository.findAll();
 	}
+	@GetMapping(path="/allreader")
+	public @ResponseBody Iterable<Reader> getAllReaders() {
+		// This returns a JSON or XML with the books
+		return readerRepository.findAll();
+	}
+
+
+
 	@GetMapping(path="/all")
 	public @ResponseBody Iterable<User> getAllUsers() {
 		// This returns a JSON or XML with the users
