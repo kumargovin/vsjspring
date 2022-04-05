@@ -1,5 +1,7 @@
 package com.blogspot.varanasisoftwarejunction.vsjmysql;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 
 @Entity
@@ -11,22 +13,19 @@ public class Reader {
     private String name;
 
 
-    public String getBookName() {
-        return book.getBookName();
-    }
 
-/*
     public Book getBook() {
         return book;
     }
 
- */
+
 
     public void setBook(Book book) {
         this.book = book;
     }
 
     @ManyToOne
+    @JsonBackReference
     private Book book;
 
     public Integer getId() {

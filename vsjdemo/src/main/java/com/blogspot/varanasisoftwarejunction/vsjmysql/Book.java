@@ -11,9 +11,9 @@ public class Book {
 
 	private String bookName;
 
-	//public List<Reader> getReaderList() {
-	//	return readerList;
-	//}
+	public List<Reader> getReaderList() {
+	return readerList;
+	}
 	public void setReaderList(List<Reader> readerList) {
 		this.readerList = readerList;
 	}
