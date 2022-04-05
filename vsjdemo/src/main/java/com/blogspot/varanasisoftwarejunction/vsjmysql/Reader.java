@@ -10,9 +10,17 @@ public class Reader {
     private Integer id;
     private String name;
 
+
+    public String getBookName() {
+        return book.getBookName();
+    }
+
+/*
     public Book getBook() {
         return book;
     }
+
+ */
 
     public void setBook(Book book) {
         this.book = book;
